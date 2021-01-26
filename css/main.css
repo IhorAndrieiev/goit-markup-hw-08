@@ -113,6 +113,83 @@ img {
   background-color: var(--accent-color);
 }
 
+.icon-antenna::before {
+  background-image: url("../images/icon/antenna.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/icon/clock.svg");
+}
+
+.icon-diagram::before {
+  background-image: url("../images/icon/diagram.svg");
+}
+
+.icon-astronaut::before {
+  background-image: url("../images/icon/astronaut.svg");
+}
+
+.team-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .work-title-about,
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+  }
+}
+
+.social-list {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  margin: auto;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-right: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
 .hero {
   margin: 0 auto;
   max-width: 480px;
@@ -194,5 +271,129 @@ img {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop/hat1200@3x.jpg");
   }
+}
+
+@media screen and (max-width: 767px) {
+  .features {
+    padding: 60px 15px;
+  }
+  .features-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.features-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-item .features-title {
+  width: 270px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.features-text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 60px 0;
+  }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-item {
+    width: 354px;
+    display: block;
+    width: 50%;
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0px;
+  }
+  .features-item {
+    width: 270px;
+    display: block;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
+  .work-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  .work-img {
+    width: 370px;
+    display: block;
+    width: 33%;
+    padding: 15px;
+  }
+  .work-list .work-img {
+    position: relative;
+  }
+  .workart {
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 370px;
+    min-height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .work-info {
+    width: fit-content;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+}
+
+.container {
+  background-color: #f5f4fa;
+}
+
+.work-team {
+  padding: 0 15px;
 }
 /*# sourceMappingURL=main.css.map */

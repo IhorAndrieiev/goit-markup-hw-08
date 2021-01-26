@@ -1,0 +1,47 @@
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
+  .work-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  .work-img {
+    width: 370px;
+    display: block;
+    width: 33%;
+    padding: 15px;
+  }
+  .work-list .work-img {
+    position: relative;
+  }
+  .workart {
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 370px;
+    min-height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .work-info {
+    width: fit-content;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+}

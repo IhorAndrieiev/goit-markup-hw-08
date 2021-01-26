@@ -1,0 +1,16 @@
+:root {
+  /*цвет основного текста #757575*/
+  --primary-text-color: #757575;
+  /* вторичный цвет  #212121 */
+  --title-text-color: #212121;
+  /* акцент #2196F3*/
+  --accent-color: #2196f3;
+  /* ==== белый цвет ======= */
+  --primary-white-color: #ffffff;
+
+  --main-font: 'Roboto', sans-serif;
+
+  --secondary-font: 'Raleway', 'Oleo Script', sans-serif;
+
+  --time-fn: cubic-bezier(0.4, 0, 0.2, 1);
+}

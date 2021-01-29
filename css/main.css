@@ -88,6 +88,11 @@ img {
   .container {
     max-width: 1200px;
   }
+  .hero-container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btn-hero-modal {
@@ -141,6 +146,30 @@ img {
   color: var(--title-text-color);
 }
 
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.team-position {
+  padding: 10px 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 130px;
+  height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .work-title-about,
   .team-title {
@@ -158,7 +187,10 @@ img {
   display: flex;
   width: 206px;
   height: 44px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .social-list-link {
@@ -224,7 +256,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet/hat768.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,13 +279,13 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/tablet/hat768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/desktop/hat1200.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 252px;
+    margin: 0;
   }
   .hero-title {
     font-size: 44px;
@@ -389,11 +421,16 @@ img {
   }
 }
 
-.container {
+.team {
   background-color: #f5f4fa;
+  padding: 60px 15px;
+}
+
+.team-list {
+  margin: 30px 0;
 }
 
 .work-team {
-  padding: 0 15px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

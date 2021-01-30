@@ -137,8 +137,20 @@ img {
   background-image: url("../images/icon/astronaut.svg");
 }
 
+.features-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
 .team-title {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -156,20 +168,32 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-align: center;
+  margin-bottom: 16px;
+  padding: 0;
 }
 
 .team-position {
-  padding: 10px 0 16px;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 130px;
-  height: 19px;
+  font-family: var(--main-font);
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
+  padding: 0;
+}
+
+.regular-title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -191,6 +215,7 @@ img {
   height: 44px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
 }
 
 .social-list-link {
@@ -325,15 +350,10 @@ img {
   margin-bottom: 30px;
 }
 
-.features-item .features-title {
+.features-title {
   width: 270px;
   height: 16px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
+  margin: auto;
 }
 
 .features-text {
@@ -352,6 +372,10 @@ img {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+  }
+  .features-title {
+    margin: 0;
+    text-align: left;
   }
   .features-item {
     width: 354px;
@@ -447,11 +471,14 @@ img {
 }
 
 .team-position {
-  padding: 10px 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 130px;
+  height: 19px;
 }
 
 @media screen and (max-width: 767px) {
-  .team-list .work-team {
+  .work-team {
     max-width: 450px;
     max-height: 622px;
     display: block;
@@ -474,6 +501,10 @@ img {
     width: calc((100%-4 * 15px) / 2);
     margin: 15px;
   }
+  .team-card {
+    width: 354px;
+    height: 374px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -488,12 +519,96 @@ img {
     max-width: 270px;
     max-height: 428px;
     width: 25%;
-    background-color: var(--primary-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
   }
   .work-team:not(:last-child) {
     margin-right: 30px;
+  }
+  .team-card {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+.regular {
+  padding: 60px 15px;
+}
+
+.regular-title {
+  margin-bottom: 30px;
+}
+
+.regular-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  justify-content: space-between;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-list-item {
+  display: flex;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-list-item:hover,
+.regular-list-item:focus {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.regular-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-list-link:focus {
+  fill: var(--accent-color);
+  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.regular-icon {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-list-item:hover .regular-icon,
+.regular-list-item:focus .regular-icon {
+  fill: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .regular-list-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .regular-list-item {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular {
+    padding: 94px 15px;
+  }
+  .regular-title {
+    margin-bottom: 50px;
+  }
+  .regular-list-item {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

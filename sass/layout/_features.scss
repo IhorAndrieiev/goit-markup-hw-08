@@ -17,15 +17,10 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.features-item .features-title {
+.features-title {
   width: 270px;
   height: 16px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-text-color);
+  margin: auto;
 }
 .features-text {
   margin-top: 10px;
@@ -43,6 +38,10 @@
   .features-list {
     display: flex;
     flex-wrap: wrap;
+  }
+  .features-title {
+    margin: 0;
+    text-align: left;
   }
   .features-item {
     width: 354px;

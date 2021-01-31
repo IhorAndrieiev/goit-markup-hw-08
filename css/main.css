@@ -196,6 +196,67 @@ img {
   color: var(--title-text-color);
 }
 
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-web {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.link-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--primary-white-color);
+}
+
+.foot-link-tel,
+.foot-link-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footsocial-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+
 @media screen and (min-width: 1200px) {
   .work-title-about,
   .team-title {
@@ -245,6 +306,13 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+.logo {
+  display: block;
+  width: 134px;
+  border: 0px;
+  align-items: center;
 }
 
 .hero {
@@ -610,5 +678,25 @@ img {
     width: calc((100% - 12 * 15px) / 6);
     margin: 15px;
   }
+}
+
+.footer {
+  display: block;
+  padding: 60px 0px;
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.footer-address {
+  margin: 20px 0 60px;
+}
+
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footsocial-list {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */

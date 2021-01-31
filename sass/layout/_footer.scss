@@ -1,0 +1,16 @@
+.footer {
+  display: block;
+  padding: 60px 0px;
+  background-color: #2f303a;
+  text-align: center;
+}
+.footer-address {
+  margin: 20px 0 60px;
+}
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footsocial-list {
+  display: flex;
+  justify-content: space-between;
+}

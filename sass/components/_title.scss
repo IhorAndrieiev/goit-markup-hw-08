@@ -109,6 +109,28 @@
   margin-bottom: 20px;
   color: var(--primary-white-color);
 }
+.footer-form-titel {
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+.footer-form {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
 @media screen and (min-width: 1200px) {
   .work-title-about,
   .team-title {
@@ -119,5 +141,11 @@
     justify-content: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+  }
+  .footsocial-title {
+    text-align: left;
+  }
+  .footer-form-titel {
+    text-align: left;
   }
 }

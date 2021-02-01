@@ -97,7 +97,8 @@ img {
     max-width: 1600px;
   }
   .footcontainer {
-    max-width: 1200px;
+    max-width: 1600px;
+    padding: 0 200px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -847,6 +848,7 @@ img {
   .footer {
     display: flex;
     max-width: 1200px;
+    justify-content: center;
   }
   .footer-address {
     width: 231px;
@@ -879,7 +881,8 @@ img {
     align-items: center;
   }
   .footlogaddress {
-    margin: 0;
+    margin-bottom: -10px;
+    margin-left: -200px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -82,6 +82,7 @@
   .footer {
     display: flex;
     max-width: 1200px;
+    justify-content: center;
   }
   .footer-address {
     width: 231px;
@@ -114,6 +115,7 @@
     align-items: center;
   }
   .footlogaddress {
-    margin: 0;
+    margin-bottom: -10px;
+    margin-left: -200px;
   }
 }

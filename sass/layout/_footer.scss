@@ -15,7 +15,7 @@
   width: 206px;
   min-height: 80px;
   display: block;
-  margin: 60px auto;
+  margin: 60px auto 0;
 }
 .footsocial-list.list {
   display: flex;
@@ -38,9 +38,13 @@
   height: 156px;
   margin: auto;
 }
+.footer-form {
+  height: 156px;
+}
 .footer-form-titel {
-  margin-top: 60px;
   height: 19px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .input {
@@ -52,7 +56,7 @@
   height: 50px;
 
   width: 100%;
-  margin-top: 20px;
+
   margin-left: 0;
   margin-right: 0;
 
@@ -71,7 +75,7 @@
   }
   .footer-address {
     width: 232px;
-    margin-left: 76px;
+    margin-left: 61px;
   }
   .footsocial {
     margin-top: 5px;
@@ -83,6 +87,8 @@
     display: flex;
     max-width: 1200px;
     justify-content: center;
+    margin: 0 auto;
+    min-height: 252px;
   }
   .footer-address {
     width: 231px;
@@ -95,15 +101,20 @@
   }
   .footer-box {
     display: flex;
-    width: 358px;
+    width: 570px;
     height: 86px;
     margin-left: 93px;
     margin-top: 12px;
     margin-bottom: 0;
-    margin-right: 12px;
+    margin-right: -90px;
+  }
+  .footer-form {
+    width: 570px;
+    height: 86px;
   }
   .input {
     width: 358px;
+    height: 50px;
   }
   .footer-field {
     display: flex;
@@ -115,6 +126,7 @@
     align-items: center;
   }
   .footlogaddress {
+    justify-content: center;
     margin-bottom: -10px;
     margin-left: -200px;
   }

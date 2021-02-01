@@ -98,7 +98,7 @@ img {
   }
   .footcontainer {
     max-width: 1600px;
-    padding: 0 200px;
+    padding: 0 0px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -113,20 +113,11 @@ img {
   border: 0;
   cursor: pointer;
   border-radius: 4px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  align-items: center;
-  text-align: center;
   margin: auto;
   margin-top: 30px;
   display: block;
   padding: 10px 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
@@ -136,15 +127,6 @@ img {
   border: 0;
   cursor: pointer;
   border-radius: 4px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   display: flex;
   margin-top: 20px;
   margin-left: auto;
@@ -158,6 +140,8 @@ img {
 @media screen and (min-width: 1200px) {
   .btn-footer-form {
     margin-left: 12px;
+    margin-top: 0;
+    margin-right: 0px;
   }
 }
 
@@ -175,6 +159,30 @@ img {
 
 .icon-astronaut::before {
   background-image: url("../images/icon/astronaut.svg");
+}
+
+.hero-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.btn-hero-modal {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-white-color);
 }
 
 .features-title {
@@ -195,9 +203,9 @@ img {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
@@ -206,10 +214,10 @@ img {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
   text-align: center;
   margin-bottom: 16px;
   padding: 0;
+  color: var(--title-text-color);
 }
 
 .team-position {
@@ -219,9 +227,9 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
   text-align: center;
   padding: 0;
+  color: var(--primary-text-color);
 }
 
 .regular-title {
@@ -230,7 +238,6 @@ img {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -317,7 +324,23 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.btn-footer-form {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
   .work-title-about,
   .team-title {
     font-weight: 700;
@@ -327,6 +350,14 @@ img {
     justify-content: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+  }
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .logo-web {
+    font-size: 26px;
+    line-height: 1.19;
   }
   .footsocial-title {
     text-align: left;
@@ -394,6 +425,20 @@ img {
   align-items: center;
 }
 
+.footer-logo {
+  display: block;
+  width: 154px;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    width: 145px;
+    margin: 0;
+  }
+}
+
 .hero {
   margin: 0 auto;
   max-width: 480px;
@@ -401,17 +446,6 @@ img {
   background-repeat: no-repeat;
   padding: 118px 60px;
   background-size: 480px 400px;
-}
-
-.hero-title {
-  font-family: Roboto;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
@@ -458,10 +492,6 @@ img {
     height: 600px;
     padding: 200px 252px;
     margin: 0;
-  }
-  .hero-title {
-    font-size: 44px;
-    line-height: 1.36;
   }
 }
 
@@ -778,7 +808,7 @@ img {
   width: 206px;
   min-height: 80px;
   display: block;
-  margin: 60px auto;
+  margin: 60px auto 0;
 }
 
 .footsocial-list.list {
@@ -805,9 +835,14 @@ img {
   margin: auto;
 }
 
+.footer-form {
+  height: 156px;
+}
+
 .footer-form-titel {
-  margin-top: 60px;
   height: 19px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .input {
@@ -817,7 +852,6 @@ img {
   max-width: 450px;
   height: 50px;
   width: 100%;
-  margin-top: 20px;
   margin-left: 0;
   margin-right: 0;
   font-size: 16px;
@@ -836,7 +870,7 @@ img {
   }
   .footer-address {
     width: 232px;
-    margin-left: 76px;
+    margin-left: 61px;
   }
   .footsocial {
     margin-top: 5px;
@@ -849,6 +883,8 @@ img {
     display: flex;
     max-width: 1200px;
     justify-content: center;
+    margin: 0 auto;
+    min-height: 252px;
   }
   .footer-address {
     width: 231px;
@@ -861,15 +897,20 @@ img {
   }
   .footer-box {
     display: flex;
-    width: 358px;
+    width: 570px;
     height: 86px;
     margin-left: 93px;
     margin-top: 12px;
     margin-bottom: 0;
-    margin-right: 12px;
+    margin-right: -90px;
+  }
+  .footer-form {
+    width: 570px;
+    height: 86px;
   }
   .input {
     width: 358px;
+    height: 50px;
   }
   .footer-field {
     display: flex;
@@ -881,6 +922,7 @@ img {
     align-items: center;
   }
   .footlogaddress {
+    justify-content: center;
     margin-bottom: -10px;
     margin-left: -200px;
   }

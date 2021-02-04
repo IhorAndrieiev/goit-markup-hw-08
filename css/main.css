@@ -197,6 +197,16 @@ img {
   color: var(--title-text-color);
 }
 
+.features-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 .team-title {
   font-family: var(--main-font);
   font-style: normal;
@@ -440,12 +450,15 @@ img {
 }
 
 .hero {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 480px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobile/hat480.jpg");
   background-repeat: no-repeat;
   padding: 118px 60px;
   background-size: 480px 400px;
+  background-position: center;
+  align-items: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
@@ -467,7 +480,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 118px 204px;
-    background-size: 768px 400px;
   }
 }
 
@@ -491,7 +503,6 @@ img {
     max-width: 1600px;
     height: 600px;
     padding: 200px 252px;
-    margin: 0;
   }
 }
 
@@ -535,11 +546,6 @@ img {
 
 .features-text {
   margin-top: 10px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 @media screen and (min-width: 768px) {
